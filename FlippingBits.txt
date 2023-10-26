@@ -1,0 +1,4 @@
+def flippingBits(n):
+    max = 2 ** 32 - 1
+    res = n ^ max
+    return res
