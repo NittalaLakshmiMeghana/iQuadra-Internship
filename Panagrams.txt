@@ -1,0 +1,7 @@
+def pangrams(s):
+    alpha = "abcdefghijklmnopqrstuvwxyz"
+    s = s.lower()
+    for i in alphabet:
+        if i not in s:
+            return "not pangram" 
+    return "pangram"
