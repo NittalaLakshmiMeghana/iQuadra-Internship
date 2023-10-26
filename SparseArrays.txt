@@ -1,0 +1,15 @@
+def matchingStrings(strings, queries):
+    res = []
+    str_count = {}
+    for str in strings:
+        if str in str_count:
+            str_count[str]+=1
+        else:
+            str_count[str]=1
+            
+    for query in queries:
+        if query in str_count:
+            res.append(str_count[query])
+        else:
+            res.append(0)
+    return res
