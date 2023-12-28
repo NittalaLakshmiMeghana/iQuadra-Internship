@@ -1,0 +1,8 @@
+def gridChallenge(grid):
+    # Write your code here
+    string_grid=[''.join(sorted(row)) for row in grid]
+    for i in range(len(string_grid[0])):
+        for j in range(1,len(string_grid)):
+            if string_grid[j][i]<string_grid[j-1][i]:
+                return 'NO'
+    return 'YES'

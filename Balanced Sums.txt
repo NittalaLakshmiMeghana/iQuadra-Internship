@@ -1,0 +1,10 @@
+def balancedSums(arr):
+    # Write your code here
+    total=sum(arr)
+    l=0
+    for n in arr:
+        total-=n
+        if l==total:
+            return 'YES'
+        l+=n 
+    return 'NO'

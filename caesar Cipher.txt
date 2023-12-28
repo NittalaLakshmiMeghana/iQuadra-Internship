@@ -1,0 +1,10 @@
+def caesarCipher(s, k):
+    # Write your code here
+    res=""
+    for ch in s:
+        if ch.isalpha():
+            base=ord('a') if ch.islower() else ord('A')
+            res+=chr((ord(ch)-base+k)%26+base)
+        else:
+            res+=ch
+    return res

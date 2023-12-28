@@ -1,0 +1,4 @@
+def pageCount(n, p):
+    frontPages=p//2
+    backPages=(n//2)-(p//2)
+    return min(frontPages,backPages)
