@@ -1,0 +1,14 @@
+def birthday(s, d, m):
+    output=[]
+    for i in range(0,len(s)):
+        count=0
+        t=i
+        new=[]
+        for j in range(0,m):
+            if t< len(s):
+                count+=s[t]
+                new.append(s[t])
+                t+=1
+        if count==d:
+            output.append(new)
+    return len(output) 
