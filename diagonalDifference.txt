@@ -1,0 +1,8 @@
+def diagonalDifference(arr):
+    l=0
+    r=0
+    for i in range(n):
+        r+=arr[i][n-i-1]
+        l+=arr[i][i]
+        diff=abs(l-r)
+    return diff
