@@ -1,0 +1,7 @@
+from collections import Counter
+def sockMerchant(n, ar):
+    s=Counter(ar)
+    c=0
+    for i in s:
+        c+=(s[i]//2)
+    return c
